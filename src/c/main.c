@@ -585,10 +585,10 @@ static void init(void) {
 
     // AppMessage
     app_message_open(256, 64);
-    app_message_register_inbox_received(inbox_received_handler, NULL);
-    app_message_register_inbox_dropped(inbox_dropped_handler, NULL);
-    app_message_register_outbox_sent(outbox_sent_handler, NULL);
-    app_message_register_outbox_failed(outbox_failed_handler, NULL);
+    app_message_register_inbox_received(inbox_received_handler);
+    app_message_register_inbox_dropped(inbox_dropped_handler);
+    app_message_register_outbox_sent(outbox_sent_handler);
+    app_message_register_outbox_failed(outbox_failed_handler);
 }
 
 static void deinit(void) {

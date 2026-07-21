@@ -2,24 +2,31 @@
   "name": "slopvibe-watchface",
   "author": "SlopVibe",
   "version": "1.0.0",
-  "uuid": "d95a901e-c9e3-4ad2-a302-c9c8c61193ef",
-  "sdkVersion": "3",
-  "watchapp": {
-    "watchface": true
-  },
-  "targetPlatforms": ["emery"],
-  "capabilities": ["configurable", "health"],
-  "messageKeys": [
-    {"name": "KEY_WEATHER_TEMP",    "value": 0},
-    {"name": "KEY_WEATHER_CODE",    "value": 1},
-    {"name": "KEY_CAL_COUNT",       "value": 2},
-    {"name": "KEY_CAL_1_TITLE",     "value": 3},
-    {"name": "KEY_CAL_1_TIME",      "value": 4},
-    {"name": "KEY_CAL_2_TITLE",     "value": 5},
-    {"name": "KEY_CAL_2_TIME",      "value": 6},
-    {"name": "KEY_STEP_GOAL",       "value": 7}
-  ],
-  "resources": {
-    "media": []
+  "keywords": ["pebble-app"],
+  "private": true,
+  "dependencies": {},
+  "pebble": {
+    "displayName": "SlopVibe",
+    "uuid": "750c8cf8-ec62-428d-a093-83e11fcca681",
+    "sdkVersion": "3",
+    "enableMultiJS": true,
+    "targetPlatforms": ["emery"],
+    "watchapp": {
+      "watchface": true
+    },
+    "capabilities": ["health"],
+    "messageKeys": [
+      "KEY_WEATHER_TEMP",
+      "KEY_WEATHER_CODE",
+      "KEY_CAL_COUNT",
+      "KEY_CAL_1_TITLE",
+      "KEY_CAL_1_TIME",
+      "KEY_CAL_2_TITLE",
+      "KEY_CAL_2_TIME",
+      "KEY_STEP_GOAL"
+    ],
+    "resources": {
+      "media": []
+    }
   }
 }
