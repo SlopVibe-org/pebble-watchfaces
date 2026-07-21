@@ -1,0 +1,28 @@
+# Build output
+build/
+*.pbw
+*.o
+*.elf
+*.bin
+*.pbpack
+*.resball
+.lock-waf_*
+.wafpickle-*
+
+# Screenshots (keep only the store one)
+pebble_screenshot_*.png
+screenshot_store_*.png
+emery_screenshot.png
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Pebble SDK local config
+pebble_deps/
